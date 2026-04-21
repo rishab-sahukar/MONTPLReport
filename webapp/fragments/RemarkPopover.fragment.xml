@@ -1,0 +1,24 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+  <Popover
+    title="Edit Remark"
+    placement="Auto"
+    contentWidth="300px">
+    <VBox class="sapUiSmallMargin">
+      <TextArea
+        value="{note}"
+        rows="4"
+        growing="true"
+        width="100%"/>
+    </VBox>
+    <footer>
+      <Toolbar>
+        <ToolbarSpacer/>
+        <Button text="Cancel" press=".onCloseNote"/>
+        <Button text="Save" type="Emphasized" press=".onSaveNote"/>
+      </Toolbar>
+    </footer>
+
+  </Popover>
+</core:FragmentDefinition>

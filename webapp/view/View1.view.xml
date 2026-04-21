@@ -1,306 +1,403 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m" controllerName="sap.ui.test.controller.View1">
-    <Table items="{/rows}" noDataText="Drop column list items here and columns in the area above" id="table0" mode="MultiSelect">
-        <items>
-            <ColumnListItem>
-                <cells>
-                    <CustomListItem type="Inactive">
-                        <content>
-                            <HBox>
-                                <items>
-                                    <VBox>
-                                        <items>
-                                            <ObjectIdentifier title="{salesOrderNumber}"/>
-                                            <ObjectIdentifier title="{materialdescription}"/>
-                                            <Text text="{plant}"/>
-                                            <Text text="{dueDate}"/>
-                                            <Text text="{modelDesign}"/>
-                                        </items>
-                                    </VBox>
-                                    <VBox>
-                                        <items>
-                                            <Text text="{itemNo}"/>
-                                             <Text text=""/>
-                                            <Text text="{materialNo}"/>
-                                            <Text text="{confirmedDate}"/>
-                                        </items>
-                                    </VBox>
-                                    <VBox>
-                                        <items>
-                                            <Text text="{itemcategory}"/>
-                                            <Text text=""/>
-                                            <Text text=""/>
-                                            <Text text=""/>
-                                            <Text text="{salesGroup}"/>
-                                        </items>
-                                    </VBox>
-                                </items>
-                            </HBox>
-                        </content>
-                    </CustomListItem>
-                    <CustomListItem type="Inactive">
-                        <content>
-                            <HBox>
-                                <items>
-                                    <VBox class="sapUiSmallMarginEnd">
-                                        <items>
-                                            <Text text="{plantOrder}"/>
-                                            <Text text=""/>
-                                            <Text text="{commercialFlag}"/>
-                                            <Text text="{planFlag}"/>
-                                        </items>
-                                    </VBox>
-                                    <VBox>
-                                        <items>
-                                            <ObjectStatus class="sapMObjectStatusMediam" text="" state="Success" icon="sap-icon://sys-enter-2"/>
-                                            <Text text=""/>
-                                            <Text text="{mrpController}"/>
-                                        </items>
-                                    </VBox>
-                                </items>
-                            </HBox>
-                        </content>
-                    </CustomListItem>
-                    <CustomListItem>
-                        <content>
-                            <VBox  direction="Column">
-                                <items>
-                                    <HBox  class="sapUiMediumMarginBottom">
-                                        <items>
-                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
-                                        </items>
-                                    </HBox>
-                                    <HBox >
-                                        <items>
-                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                        </items>
-                                    </HBox>
-                                </items>
-                            </VBox>
-                        </content>
-                    </CustomListItem>
-                    <CustomListItem>
-                        <content>
-                            <VBox  direction="Column">
-                                <items>
-                                    <HBox  class="sapUiMediumMarginBottom">
-                                        <items>
-                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
-                                        </items>
-                                    </HBox>
-                                    <HBox >
-                                        <items>
-                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                        </items>
-                                    </HBox>
-                                </items>
-                            </VBox>
-                        </content>
-                    </CustomListItem>
-                    <CustomListItem>
-                        <content>
-                            <VBox  direction="Column">
-                                <items>
-                                    <HBox  class="sapUiMediumMarginBottom">
-                                        <items>
-                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
-                                        </items>
-                                    </HBox>
-                                    <HBox >
-                                        <items>
-                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                        </items>
-                                    </HBox>
-                                </items>
-                            </VBox>
-                        </content>
-                    </CustomListItem>
-                    <CustomListItem>
-                        <content>
-                            <VBox  direction="Column">
-                                <items>
-                                    <HBox  class="sapUiMediumMarginBottom">
-                                        <items>
-                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
-                                        </items>
-                                    </HBox>
-                                    <HBox >
-                                        <items>
-                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                        </items>
-                                    </HBox>
-                                </items>
-                            </VBox>
-                        </content>
-                    </CustomListItem>
-                    <CustomListItem>
-                        <content>
-                            <VBox  direction="Column">
-                                <items>
-                                    <HBox  class="sapUiMediumMarginBottom">
-                                        <items>
-                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
-                                        </items>
-                                    </HBox>
-                                    <HBox >
-                                        <items>
-                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                        </items>
-                                    </HBox>
-                                </items>
-                            </VBox>
-                        </content>
-                    </CustomListItem>
-                    <CustomListItem>
-                        <content>
-                            <VBox  direction="Column">
-                                <items>
-                                    <HBox  class="sapUiMediumMarginBottom">
-                                        <items>
-                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
-                                        </items>
-                                    </HBox>
-                                    <HBox >
-                                        <items>
-                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
-                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                        </items>
-                                    </HBox>
-                                </items>
-                            </VBox>
-                        </content>
-                    </CustomListItem>
-                </cells>
-            </ColumnListItem>
-        </items>
-        <columns>
-            <Column id="column0" width="25em">
-                <header>
-                    <Label text="PP-Order" id="label0"/>
-                </header>
-            </Column>
-            <Column width="15em">
-                <header>
-                    <Text text="Status" id="text7"/>
-                </header>
-            </Column>
-            <Column>
-                <header>
-                    <VBox  direction="Column">
-                        <items>
-                            <Text text="Pre Assembly" class="sapUiTinyMarginBottom"/>
-                            <HBox  class="sapUiTinyMarginBottom">
-                                <items>
-                                    <Text text="TS" class="sapUiLargeMarginEnd"/>
-                                    <Text text="TE"/>
-                                </items>
-                            </HBox>
-                            <HBox >
-                                <items>
-                                    <Text text="IS" class="sapUiLargeMarginEnd"/>
-                                    <Text text="IE" class="sapUiTinyMarginBegin"/>
-                                </items>
-                            </HBox>
-                        </items>
-                    </VBox>
-                </header>
-            </Column>
-            <Column>
-                <header>
-                    <VBox  direction="Column">
-                        <items>
-                            <Text text="Pre Assembly" class="sapUiTinyMarginBottom"/>
-                            <HBox  class="sapUiTinyMarginBottom">
-                                <items>
-                                    <Text text="TS" class="sapUiLargeMarginEnd"/>
-                                    <Text text="TE"/>
-                                </items>
-                            </HBox>
-                            <HBox >
-                                <items>
-                                    <Text text="IS" class="sapUiLargeMarginEnd"/>
-                                    <Text text="IE" class="sapUiTinyMarginBegin"/>
-                                </items>
-                            </HBox>
-                        </items>
-                    </VBox>
-                </header>
-            </Column>
-            <Column>
-                <header>
-                    <VBox  direction="Column">
-                        <items>
-                            <Text text="Pre Assembly" class="sapUiTinyMarginBottom"/>
-                            <HBox  class="sapUiTinyMarginBottom">
-                                <items>
-                                    <Text text="TS" class="sapUiLargeMarginEnd"/>
-                                    <Text text="TE"/>
-                                </items>
-                            </HBox>
-                            <HBox >
-                                <items>
-                                    <Text text="IS" class="sapUiLargeMarginEnd"/>
-                                    <Text text="IE" class="sapUiTinyMarginBegin"/>
-                                </items>
-                            </HBox>
-                        </items>
-                    </VBox>
-                </header>
-            </Column>
+    xmlns:fb="sap.ui.comp.filterbar"
+    xmlns:f="sap.f"
+    xmlns:sf="sap.ui.comp.smartfilterbar"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:u="sap.uxap"
+    xmlns:sap.ui.layout="sap.ui.layout" controllerName="sap.ui.test.controller.View1">
+    <Page>
+        <content>
+            <f:DynamicPage headerExpanded="true">
+                <f:header>
+                    <f:DynamicPageHeader>
+                        <f:content>
+                            <fb:FilterBar id="filterbar" persistencyKey="myPersKey" useToolbar="false" search=".onSearch" filterChange=".onFilterChange" afterVariantLoad=".onAfterVariantLoad">
+                                <fb:filterGroupItems>
 
-            <Column>
-                <header>
-                    <VBox  direction="Column">
+                                </fb:filterGroupItems>
+                            </fb:FilterBar>
+                            <u:ObjectPageHeaderContent>
+                                <u:content>
+                                    <sap.ui.layout:VerticalLayout width="100%" id="layout0_1776769856590">
+                                        <sap.ui.layout:content>
+                                            <Title text="{i18n>customerOrderdetailTitle}" level="H4" titleStyle="H4"/>
+                                            <sap.ui.layout:HorizontalLayout id="layout0">
+                                                <sap.ui.layout:content>
+                                                    <sap.ui.layout:VerticalLayout width="100%" id="layout1">
+                                                        <sap.ui.layout:content>
+                                                            <Label text="{i18n>salesOrderNumber}"/>
+                                                            <Label text="{i18n>materialDescription}"/>
+                                                            <Label text="{i18n>plant}"/>
+                                                            <Label text="{i18n>vfg}"/>
+                                                            <Label text="{i18n>modelDesign}"/>
+                                                        </sap.ui.layout:content>
+                                                    </sap.ui.layout:VerticalLayout>
+                                                    <sap.ui.layout:VerticalLayout width="100%" id="layout0_1776769484083">
+                                                        <sap.ui.layout:content>
+                                                            <Label text="{i18n>posNr}"/>
+                                                            <Label text=""/>
+                                                            <Label text="{i18n>material}"/>
+                                                            <Label text="{i18n>vfgConfirmed}"/>
+                                                        </sap.ui.layout:content>
+                                                    </sap.ui.layout:VerticalLayout>
+                                                    <sap.ui.layout:VerticalLayout width="100%" id="layout0_1776769563112">
+                                                        <sap.ui.layout:content>
+                                                            <Label text="{i18n>posType}"/>
+                                                            <Label text=""/>
+                                                            <Label text=""/>
+                                                            <Label text="{i18n>packageDate}"/>
+                                                            <Label text="{i18n>businessLine}"/>
+                                                        </sap.ui.layout:content>
+                                                    </sap.ui.layout:VerticalLayout>
+                                                </sap.ui.layout:content>
+                                            </sap.ui.layout:HorizontalLayout>
+                                        </sap.ui.layout:content>
+                                    </sap.ui.layout:VerticalLayout>
+                                </u:content>
+                            </u:ObjectPageHeaderContent>
+                        </f:content>
+                    </f:DynamicPageHeader>
+                </f:header>
+                <f:content>
+                    <Table items="{/rows}" noDataText="Drop column list items here and columns in the area above" id="table0" mode="MultiSelect" growing="true" growingScrollToLoad="true" sticky="ColumnHeaders,HeaderToolbar">
+                        <columns>
+                            <Column id="column0" width="27em">
+                                <header>
+                                    <Text text="{i18n>ppOrder}"/>
+                                </header>
+                            </Column>
+                            <Column width="15em">
+                                <header>
+                                    <Text text="{i18n>status}"/>
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <VBox direction="Column">
+                                        <items>
+                                            <Text text="{i18n>preAssembly}"/>
+                                            <HBox class="sapUiTinyMarginBottom">
+                                                <items>
+                                                    <Text text="{i18n>ts}" class="sapUiLargeMarginEnd"/>
+                                                    <Text text="{i18n>te}"/>
+                                                </items>
+                                            </HBox>
+                                            <HBox>
+                                                <items>
+                                                    <Text text="{i18n>is}" class="sapUiLargeMarginEnd"/>
+                                                    <Text text="{i18n>ie}" class="sapUiTinyMarginBegin"/>
+                                                </items>
+                                            </HBox>
+                                        </items>
+                                    </VBox>
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <VBox direction="Column">
+                                        <items>
+                                            <Text text="{i18n>bowl}" class="sapUiTinyMarginBottom"/>
+                                            <HBox class="sapUiTinyMarginBottom">
+                                                <items>
+                                                    <Text text="TS" class="sapUiLargeMarginEnd"/>
+                                                    <Text text="TE"/>
+                                                </items>
+                                            </HBox>
+                                            <HBox>
+                                                <items>
+                                                    <Text text="IS" class="sapUiLargeMarginEnd"/>
+                                                    <Text text="IE" class="sapUiTinyMarginBegin"/>
+                                                </items>
+                                            </HBox>
+                                        </items>
+                                    </VBox>
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <VBox direction="Column">
+                                        <items>
+                                            <Text text="{i18n>finishedAssembly}" class="sapUiTinyMarginBottom"/>
+                                            <HBox class="sapUiTinyMarginBottom">
+                                                <items>
+                                                    <Text text="TS" class="sapUiLargeMarginEnd"/>
+                                                    <Text text="TE"/>
+                                                </items>
+                                            </HBox>
+                                            <HBox>
+                                                <items>
+                                                    <Text text="IS" class="sapUiLargeMarginEnd"/>
+                                                    <Text text="IE" class="sapUiTinyMarginBegin"/>
+                                                </items>
+                                            </HBox>
+                                        </items>
+                                    </VBox>
+                                </header>
+                            </Column>
+
+                            <Column>
+                                <header>
+                                    <VBox direction="Column">
+                                        <items>
+                                            <Text text="{i18n>endTestBench}" class="sapUiTinyMarginBottom"/>
+                                            <HBox class="sapUiTinyMarginBottom">
+                                                <items>
+                                                    <Text text="TS" class="sapUiLargeMarginEnd"/>
+                                                    <Text text="TE"/>
+                                                </items>
+                                            </HBox>
+                                            <HBox>
+                                                <items>
+                                                    <Text text="IS" class="sapUiLargeMarginEnd"/>
+                                                    <Text text="IE" class="sapUiTinyMarginBegin"/>
+                                                </items>
+                                            </HBox>
+                                        </items>
+                                    </VBox>
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <VBox direction="Column">
+                                        <items>
+                                            <Text text="{i18n>finalAssembly}" class="sapUiTinyMarginBottom"/>
+                                            <HBox class="sapUiTinyMarginBottom">
+                                                <items>
+                                                    <Text text="TS" class="sapUiLargeMarginEnd"/>
+                                                    <Text text="TE"/>
+                                                </items>
+                                            </HBox>
+                                            <HBox>
+                                                <items>
+                                                    <Text text="IS" class="sapUiLargeMarginEnd"/>
+                                                    <Text text="IE" class="sapUiTinyMarginBegin"/>
+                                                </items>
+                                            </HBox>
+                                        </items>
+                                    </VBox>
+                                </header>
+                            </Column>
+                        </columns>
                         <items>
-                            <Text text="Pre Assembly" class="sapUiTinyMarginBottom"/>
-                            <HBox  class="sapUiTinyMarginBottom">
-                                <items>
-                                    <Text text="TS" class="sapUiLargeMarginEnd"/>
-                                    <Text text="TE"/>
-                                </items>
-                            </HBox>
-                            <HBox >
-                                <items>
-                                    <Text text="IS" class="sapUiLargeMarginEnd"/>
-                                    <Text text="IE" class="sapUiTinyMarginBegin"/>
-                                </items>
-                            </HBox>
+                            <ColumnListItem>
+                                <cells>
+                                    <CustomListItem type="Inactive">
+                                        <content>
+                                            <HBox>
+                                                <items>
+                                                    <VBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{salesOrderNumber}"/>
+                                                            <ObjectIdentifier title="{materialdescription}"/>
+                                                            <Text text="{plant}"/>
+                                                            <Text text="{dueDate}"/>
+                                                            <Text text="{modelDesign}"/>
+                                                        </items>
+                                                    </VBox>
+                                                    <VBox>
+                                                        <items>
+                                                            <Text text="{itemNo}"/>
+                                                            <Text text=""/>
+                                                            <Text text="{materialNo}"/>
+                                                            <Text text="{confirmedDate}"/>
+                                                        </items>
+                                                    </VBox>
+                                                    <VBox>
+                                                        <items>
+                                                            <Text text="{itemcategory}"/>
+                                                            <Text text=""/>
+                                                            <Text text=""/>
+                                                            <Text text="2016-08-24"/>
+                                                            <Text text="{salesGroup}"/>
+                                                        </items>
+                                                    </VBox>
+                                                </items>
+                                            </HBox>
+                                        </content>
+                                    </CustomListItem>
+                                    <CustomListItem type="Inactive">
+                                        <content>
+                                            <HBox class="sapUiNoMarginTop">
+                                                <items>
+                                                    <VBox class="sapUiSmallMarginEnd">
+                                                        <items>
+                                                            <Text text="{plantOrder}"/>
+                                                            <Text text=""/>
+                                                            <Text text="{commercialFlag}"/>
+                                                            <Text text="{planFlag}"/>
+                                                        </items>
+                                                    </VBox>
+                                                    <VBox>
+                                                        <items>
+                                                            <!-- <ObjectStatus class="sapMObjectStatusMediam" text="" state="Success" icon="sap-icon://sys-enter-2"/> -->
+                                                            <OverflowToolbar design="Transparent" style="Clear">
+                                                                <content>
+                                                                    <ObjectStatus class="sapMObjectStatusMediam" state="Success" icon="sap-icon://sys-enter-2"/>
+                                                                    <ObjectStatus class="sapMObjectStatusMediam" state="Warning" icon="sap-icon://warning2"/>
+                                                                    <ObjectStatus class="sapMObjectStatusMediam" state="Error" icon="sap-icon://error"/>
+                                                                </content>
+                                                            </OverflowToolbar>
+                                                            <Text text=""/>
+                                                            <Text text="{mrpController}"/>
+                                                        </items>
+                                                    </VBox>
+                                                </items>
+                                            </HBox>
+                                            <!-- <OverflowToolbar design="Transparent" style="Clear" class="sapUiTinyMarginTop">
+                                <content>
+                                    <ToolbarSpacer />
+                                    <Button text="Remark" activeIcon="sap-icon://notes" type="Ghost" icon="sap-icon://notes" press=".onOpenRemark"/>
+                                    <ToolbarSpacer />
+                                </content>
+                            </OverflowToolbar> -->
+                                            <VBox alignItems="Start">
+                                                <Label text="{i18n>remark}" wrapping="false" class="noteLabel"/>
+                                                <TextArea value="{note}" rows="3" width="100%"/>
+                                            </VBox>
+                                        </content>
+                                    </CustomListItem>
+                                    <CustomListItem>
+                                        <content>
+                                            <VBox direction="Column">
+                                                <items>
+                                                    <HBox class="sapUiMediumMarginBottom">
+                                                        <items>
+                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
+                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
+                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/>
+                                                            <ObjectStatus state="Warning" icon="sap-icon://warning2"/>
+                                                            <ObjectStatus state="Error" icon="sap-icon://error"/>
+                                                        </content>
+                                                    </OverflowToolbar>
+                                                </items>
+                                            </VBox>
+                                        </content>
+                                    </CustomListItem>
+                                    <CustomListItem>
+                                        <content>
+                                            <VBox direction="Column">
+                                                <items>
+                                                    <HBox class="sapUiMediumMarginBottom">
+                                                        <items>
+                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
+                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
+                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/>
+                                                            <ObjectStatus state="Warning" icon="sap-icon://warning2"/>
+                                                            <ObjectStatus state="Error" icon="sap-icon://error"/>
+                                                        </content>
+                                                    </OverflowToolbar>
+                                                </items>
+                                            </VBox>
+                                        </content>
+                                    </CustomListItem>
+                                    <CustomListItem>
+                                        <content>
+                                            <VBox direction="Column">
+                                                <items>
+                                                    <HBox class="sapUiMediumMarginBottom">
+                                                        <items>
+                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
+                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
+                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/>
+                                                            <ObjectStatus state="Warning" icon="sap-icon://warning2"/>
+                                                            <ObjectStatus state="Error" icon="sap-icon://error"/>
+                                                        </content>
+                                                    </OverflowToolbar>
+                                                </items>
+                                            </VBox>
+                                        </content>
+                                    </CustomListItem>
+                                    <CustomListItem>
+                                        <content>
+                                            <VBox direction="Column">
+                                                <items>
+                                                    <HBox class="sapUiMediumMarginBottom">
+                                                        <items>
+                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
+                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
+                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/>
+                                                            <ObjectStatus state="Warning" icon="sap-icon://warning2"/>
+                                                            <ObjectStatus state="Error" icon="sap-icon://error"/>
+                                                        </content>
+                                                    </OverflowToolbar>
+                                                </items>
+                                            </VBox>
+                                        </content>
+                                    </CustomListItem>
+                                    <CustomListItem>
+                                        <content>
+                                            <VBox direction="Column">
+                                                <items>
+                                                    <HBox class="sapUiMediumMarginBottom">
+                                                        <items>
+                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
+                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
+                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/>
+                                                            <ObjectStatus state="Warning" icon="sap-icon://warning2"/>
+                                                            <ObjectStatus state="Error" icon="sap-icon://error"/>
+                                                        </content>
+                                                    </OverflowToolbar>
+                                                </items>
+                                            </VBox>
+                                        </content>
+                                    </CustomListItem>
+                                </cells>
+                            </ColumnListItem>
                         </items>
-                    </VBox>
-                </header>
-            </Column>
-            <Column>
-                <header>
-                    <VBox  direction="Column">
-                        <items>
-                            <Text text="Pre Assembly" class="sapUiTinyMarginBottom"/>
-                            <HBox  class="sapUiTinyMarginBottom">
-                                <items>
-                                    <Text text="TS" class="sapUiLargeMarginEnd"/>
-                                    <Text text="TE"/>
-                                </items>
-                            </HBox>
-                            <HBox >
-                                <items>
-                                    <Text text="IS" class="sapUiLargeMarginEnd"/>
-                                    <Text text="IE" class="sapUiTinyMarginBegin"/>
-                                </items>
-                            </HBox>
-                        </items>
-                    </VBox>
-                </header>
-            </Column>
-        </columns>
-    </Table>
+                    </Table>
+                </f:content>
+            </f:DynamicPage>
+        </content>
+    </Page>
 </mvc:View>

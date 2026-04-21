@@ -17,6 +17,31 @@ sap.ui.define([
                 sap.ui.require.toUrl("sap/ui/test/model/mockData.json")
             );
             this.getView().setModel(oModel);
+        },
+
+        onOpenRemark: function (oEvent) {
+            if (!this._oNotePopover) {
+                this._oNotePopover = sap.ui.xmlfragment(
+                    "sap.ui.test.fragments.RemarkPopover",
+                    this
+                );
+                this.getView().addDependent(this._oNotePopover);
+            }
+
+            this._oNotePopover.setBindingContext(
+                oEvent.getSource().getBindingContext()
+            );
+
+            this._oNotePopover.openBy(oEvent.getSource());
+        },
+
+        onCloseNote: function () {
+            this._oNotePopover.close();
+        },
+
+        onSaveNote: function () {
+            this._oNotePopover.close();
+            // Persist note if needed
         }
     });
 });
