@@ -42,6 +42,58 @@ sap.ui.define([
         onSaveNote: function () {
             this._oNotePopover.close();
             // Persist note if needed
+        },
+
+        _prepareNavigationParams: function (oFilterData) {
+            const oParams = {};
+
+            Object.keys(oFilterData).forEach((sField) => {
+                const vValue = oFilterData[sField];
+
+                if (typeof vValue === "string" || typeof vValue === "number") {
+                    oParams[sField] = vValue;
+                }
+            });
+
+            return oParams;
+        },
+
+        onNavigate: function () {
+            const oSFB = this.byId("smartFilterBar");
+            const oFilterData = oSFB.getFilterData();
+            const oParams = this._prepareNavigationParams(oFilterData);
+            const oCrossAppNav =
+                sap.ushell.Container.getService("CrossApplicationNavigation");
+            const sHash = oCrossAppNav.hrefForExternal({
+                target: {
+                    semanticObject: "MyBusinessObject",
+                    action: "display"
+                },
+                params: oParams
+            });
+            window.open(sHash, "_blank");
+        },
+
+        app2onInit: function () {
+            const oStartupParams =
+                this.getOwnerComponent().getComponentData()?.startupParameters;
+            if (oStartupParams) {
+                this._mParams = oStartupParams;
+            }
+        },
+
+
+        _applyFilters: function () {
+            const aFilters = [];
+            if (this._mParams.Plant) {
+                aFilters.push(new Filter("Plant", "EQ", this._mParams.Plant[0]));
+            }
+            if (this._mParams.Status) {
+                aFilters.push(new Filter("Status", "EQ", this._mParams.Status[0]));
+            }
+            const oBinding = this.byId("table").getBinding("rows");
+            oBinding.setFilter(aFilters);
         }
+
     });
 });
