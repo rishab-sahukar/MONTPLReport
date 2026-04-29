@@ -1,9 +1,21 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m"
-    xmlns:core="sap.ui.core"
-    xmlns:u="sap.uxap"
-    xmlns:sap.ui.layout="sap.ui.layout" controllerName="sap.ui.test.controller.View1">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:u="sap.uxap" xmlns:sap.ui.layout="sap.ui.layout" controllerName="sap.ui.test.controller.View1">
     <Page>
+        <headerContent>
+            <Bar id="bar0">
+                <contentLeft>
+                    <Button xmlns="sap.m" text="Button" id="button0" visible="false"/>
+                </contentLeft>
+                <contentMiddle>
+                    <Button xmlns="sap.m" text="{i18n>sdOrderBtn}" type="Emphasized"/>
+                    <Button xmlns="sap.m" text="{i18n>ppOrderBtn}" type="Emphasized"/>
+                    <Button xmlns="sap.m" text="{i18n>psProjectBtn}" type="Emphasized"/>
+                    <Button xmlns="sap.m" text="{i18n>gttCockpititemBtn}" type="Emphasized"/>
+                </contentMiddle>
+                <contentRight>
+                    <Button xmlns="sap.m" text="Button" id="button2" visible="false"/>
+                </contentRight>
+            </Bar>
+        </headerContent>
         <content>
             <u:ObjectPageHeaderContent>
                 <u:content>
@@ -168,7 +180,7 @@
                         <cells>
                             <CustomListItem type="Inactive">
                                 <content>
-                                    <HBox>
+                                    <HBox class="sapUiMediumMarginBottom">
                                         <items>
                                             <VBox>
                                                 <items>
@@ -198,6 +210,18 @@
                                             </VBox>
                                         </items>
                                     </HBox>
+                                    <OverflowToolbar style="Clear" id="toolbar7" class="sapUiNoMargin">
+                                        <content>
+                                            <ToolbarSpacer id="spacer0"/>
+                                            <HBox id="hbox22" class="sapUiNoMargin">
+                                                <items>
+                                                    <Label text="{i18n>measuringDate}"/>
+                                                    <Text text="{{salesGroup}}"/>
+                                                </items>
+                                            </HBox>
+                                            <ToolbarSpacer id="spacer1"/>
+                                        </content>
+                                    </OverflowToolbar>
                                 </content>
                             </CustomListItem>
                             <CustomListItem type="Inactive">
@@ -220,9 +244,9 @@
                                                             <!-- <ObjectStatus class="sapMObjectStatusMediam" state="Success" icon="sap-icon://sys-enter-2"/> -->
                                                             <!-- <ObjectStatus class="sapMObjectStatusMediam" state="Warning" icon="sap-icon://warning2"/> -->
                                                             <!-- <ObjectStatus class="sapMObjectStatusMediam" state="Error" icon="sap-icon://error"/> -->
-                                                            <core:Icon src="sap-icon://circle-task-2" color="#008000" />
-                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080" />
-                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080" />
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#008000"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
                                                         </content>
                                                     </OverflowToolbar>
                                                     <Text text=""/>
@@ -265,9 +289,9 @@
                                                     <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
                                                     <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
                                                     <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#008000" />
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080" />
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#E04E21" />
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#008000"/>
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#E04E21"/>
                                                 </content>
                                             </OverflowToolbar>
                                         </items>
@@ -295,9 +319,9 @@
                                                     <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
                                                     <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
                                                     <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080" />
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00" />
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080" />
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
                                                 </content>
                                             </OverflowToolbar>
                                         </items>
@@ -325,9 +349,9 @@
                                                     <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
                                                     <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
                                                     <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#008000" />
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00" />
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080" />
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#008000"/>
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
                                                 </content>
                                             </OverflowToolbar>
                                         </items>
@@ -355,9 +379,9 @@
                                                     <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
                                                     <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
                                                     <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080" />
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00" />
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#E04E21" />
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#E04E21"/>
                                                 </content>
                                             </OverflowToolbar>
                                         </items>
@@ -385,9 +409,9 @@
                                                     <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
                                                     <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
                                                     <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#008000" />
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00" />
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#E04E21" />
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#008000"/>
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
+                                                    <core:Icon src="sap-icon://circle-task-2" color="#E04E21"/>
                                                 </content>
                                             </OverflowToolbar>
                                         </items>
