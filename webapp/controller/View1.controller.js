@@ -149,6 +149,32 @@ sap.ui.define([
                     });
 
             });
+        },
+
+        _fetchEventDatesInChunks: function (oModel, aRows, iChunkSize) {
+            const aChunks = [];
+
+            // Split aRows into chunks of iChunkSize
+            // 500 rows / 20 = 25 chunks
+            for (let i = 0; i < aRows.length; i += iChunkSize) {
+                aChunks.push(aRows.slice(i, i + iChunkSize));
+            }
+
+            // Process each chunk sequentially using reduce
+            // chunk 1 completes → chunk 2 fires → chunk 3 fires ...
+            return aChunks.reduce((oPrevPromise, aChunk) => {
+                return oPrevPromise.then((aAccumulatedRows) => {
+
+                    // Within one chunk — fire all reads in parallel
+                    return Promise.all(
+                        aChunk.map((oRow) => this._fetchEventDates(oModel, oRow))
+                    ).then((aChunkResults) => {
+                        // Accumulate results from all chunks
+                        return aAccumulatedRows.concat(aChunkResults);
+                    });
+
+                });
+            }, Promise.resolve([]));   // start with empty accumulated array
         }
 
     });
