@@ -175,6 +175,38 @@ sap.ui.define([
 
                 });
             }, Promise.resolve([]));   // start with empty accumulated array
+        },
+
+        getIconColor: function (sDueDateA, sDueDateB, sIcon) {
+
+            const COLORS = {
+                GREEN: "#2b7c2b",   // positive green
+                ORANGE: "#e76500",   // warning orange
+                RED: "#bb0000",   // negative red
+                GREY: "#8c8c8c",   // inactive grey
+            };
+
+            // Guard — if either date missing return grey for all icons
+            if (!sDueDateA || !sDueDateB) return COLORS.GREY;
+
+            const dA = new Date(sDueDateA);  // parse to Date for comparison
+            const dB = new Date(sDueDateB);
+
+            // Guard — invalid date values
+            if (isNaN(dA.getTime()) || isNaN(dB.getTime())) return COLORS.GREY;
+
+            // ── DueDate_A > DueDate_B → icon3 RED, rest GREY ─────────────────────
+            if (dA > dB) {
+                return sIcon === "icon3" ? COLORS.RED : COLORS.GREY;
+            }
+
+            // ── DueDate_A === DueDate_B → icon2 ORANGE, rest GREY ────────────────
+            if (dA.getTime() === dB.getTime()) {
+                return sIcon === "icon2" ? COLORS.ORANGE : COLORS.GREY;
+            }
+
+            // ── DueDate_A < DueDate_B → icon1 GREEN, rest GREY ───────────────────
+            return sIcon === "icon1" ? COLORS.GREEN : COLORS.GREY;
         }
 
     });
