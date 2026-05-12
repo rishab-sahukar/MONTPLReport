@@ -60,7 +60,7 @@
                     </sap.ui.layout:VerticalLayout>
                 </u:content>
             </u:ObjectPageHeaderContent>
-            <Table items="{/rows}" noDataText="Drop column list items here and columns in the area above" id="table0" mode="MultiSelect" growing="true" growingScrollToLoad="true" sticky="ColumnHeaders,HeaderToolbar">
+            <Table items="{/rows}" noDataText="Drop column list items here and columns in the area above" id="table0" mode="MultiSelect" growing="true" growingScrollToLoad="true" selectionChange="onSelectionChange" sticky="ColumnHeaders,HeaderToolbar">
                 <columns>
                     <Column id="column0" width="24em">
                         <header>
@@ -79,14 +79,14 @@
                                     <Text text="{i18n>preAssembly}"/>
                                     <HBox class="sapUiTinyMarginBottom">
                                         <items>
-                                            <Text text="{i18n>ts}" class="sapUiLargeMarginEnd"/>
+                                            <Text text="{i18n>ts}" class="sapUiSmallMarginEnd"/>
                                             <Text text="{i18n>te}"/>
                                         </items>
                                     </HBox>
                                     <HBox>
                                         <items>
-                                            <Text text="{i18n>is}" class="sapUiLargeMarginEnd"/>
-                                            <Text text="{i18n>ie}" class="sapUiTinyMarginBegin"/>
+                                            <Text text="{i18n>is}" class="sapUiSmallMarginEnd"/>
+                                            <Text text="{i18n>ie}" />
                                         </items>
                                     </HBox>
                                 </items>
@@ -186,12 +186,12 @@
                                 <content>
                                     <HBox>
                                         <items>
-                                            <VBox class="sapUiMediumMarginEnd">
+                                            <VBox class="sapUiLargeMarginEnd">
                                                 <items>
                                                     <ObjectIdentifier title="{salesOrderNumber}"/>
                                                 </items>
                                             </VBox>
-                                             <VBox class="sapUiMediumMarginEnd">
+                                            <VBox class="sapUiLargeMarginEnd">
                                                 <items>
                                                     <Text text="{itemNo}"/>
                                                 </items>
@@ -207,7 +207,7 @@
                                     <ObjectIdentifier title="{materialdescription}"/>
                                     <HBox class="sapUiMediumMarginBottom">
                                         <items>
-                                            <VBox class="sapUiTinyMarginEnd">
+                                            <VBox class="sapUiSmallMarginEnd">
                                                 <items>
                                                     <!-- <ObjectIdentifier title="{salesOrderNumber}"/> -->
                                                     <!-- <ObjectIdentifier title="{materialdescription}"/> -->
@@ -216,7 +216,7 @@
                                                     <Text text="{modelDesign}"/>
                                                 </items>
                                             </VBox>
-                                            <VBox class="sapUiTinyMarginEnd">
+                                            <VBox class="sapUiSmallMarginEnd">
                                                 <items>
                                                     <!-- <Text text="{itemNo}"/> -->
                                                     <!-- <Text text=""/> -->
@@ -299,13 +299,13 @@
                                         <items>
                                             <HBox class="sapUiMediumMarginBottom">
                                                 <items>
-                                                    <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
+                                                    <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
                                                     <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
                                                 </items>
                                             </HBox>
                                             <HBox>
                                                 <items>
-                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
+                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
                                                     <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
                                                 </items>
                                             </HBox>

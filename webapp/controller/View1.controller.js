@@ -207,6 +207,22 @@ sap.ui.define([
 
             // ── DueDate_A < DueDate_B → icon1 GREEN, rest GREY ───────────────────
             return sIcon === "icon1" ? COLORS.GREEN : COLORS.GREY;
+        },
+
+        // ── Step 1: Checkbox selection — store selected SalesOrder numbers ──────────
+        onSelectionChange: function (oEvent) {
+            const oTable = this.byId("table0");
+            const aSelectedItems = oTable.getSelectedItems();
+
+            // Extract SalesOrderNumber from each selected row
+            const aSelectedOrders = aSelectedItems.map(function (oItem) {
+                return oItem.getBindingContext().getProperty("salesOrderNumber");
+            });
+
+            // Store in model for use on button press
+            this.getView().getModel().setProperty("/selectedOrders", aSelectedOrders);
+
+            console.log("Selected Orders:", aSelectedOrders);
         }
 
     });
