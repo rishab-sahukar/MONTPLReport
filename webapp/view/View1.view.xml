@@ -289,7 +289,8 @@
                             </OverflowToolbar> -->
                                     <VBox alignItems="Start">
                                         <Label text="{i18n>remark}" wrapping="false" class="noteLabel"/>
-                                        <TextArea value="{note}" rows="3" width="100%"/>
+                                        <TextArea value="{note}" rows="2"/>
+                                        <Button text="save" press="onRemarkPress"></Button>
                                     </VBox>
                                 </content>
                             </CustomListItem>

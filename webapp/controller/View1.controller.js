@@ -223,6 +223,44 @@ sap.ui.define([
             this.getView().getModel().setProperty("/selectedOrders", aSelectedOrders);
 
             console.log("Selected Orders:", aSelectedOrders);
+        },
+
+        onRemarkPress: function (oEvent) {
+            const oContext = oEvent.getSource().getBindingContext();
+        },
+
+        onBeforeRebindTableExtension: function (oEvent) {
+            var oBindingParams = oEvent.getParameter("bindingParams");
+
+            var oView = this.getView();
+
+            var sMSStatus = this._oAppView.getProperty("/SelectedMilestone");
+            var sMSType = this._oAppView.getProperty("/SelectedMsTypes");
+
+            var oDateRange = oView.byId(
+                "orders::SalesOrderItemList--fe::filterBar::SalesOrderItem::Custom"
+            );
+
+            var oFrom = oDateRange && oDateRange.getDateValue();
+            var oTo = oDateRange && oDateRange.getSecondDateValue();
+
+            if (sMSStatus && sMSType && oFrom && oTo) {
+
+                var sODataField = this._resolveField(sMSStatus, sMSType);
+
+                if (!sODataField) {
+                    return;
+                }
+
+                var oFilter = new sap.ui.model.Filter(
+                    sODataField,
+                    sap.ui.model.FilterOperator.BT,
+                    oFrom,
+                    oTo
+                );
+
+                oBindingParams.filters.push(oFilter);
+            }
         }
 
     });
