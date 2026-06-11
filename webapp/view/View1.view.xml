@@ -62,120 +62,112 @@
             </u:ObjectPageHeaderContent>
             <Table items="{/rows}" noDataText="Drop column list items here and columns in the area above" id="table0" mode="MultiSelect" growing="true" growingScrollToLoad="true" selectionChange="onSelectionChange" sticky="ColumnHeaders,HeaderToolbar">
                 <columns>
-                    <Column id="column0" width="24em">
+                    <Column id="column0" width="26em">
                         <header>
-                            <Text text="{i18n>ppOrder}"/>
+                            <Text text=""/>
                         </header>
                     </Column>
                     <Column width="15em">
                         <header>
-                            <Text text="{i18n>status}"/>
+                            <HBox>
+                                <items>
+                                    <Text text="{i18n>ppOrder}" class="sapUiLargeMarginEnd"/>
+                                    <Text text="{i18n>status}"/>
+                                </items>
+                            </HBox>
                         </header>
                     </Column>
-                    <Column>
+                    <Column width="60em">
                         <header>
-                            <VBox direction="Column">
+                            <HBox>
                                 <items>
-                                    <Text text="{i18n>preAssembly}"/>
-                                    <HBox class="sapUiTinyMarginBottom">
+                                    <VBox direction="Column" class="sapUiSmallMarginEnd">
                                         <items>
-                                            <Text text="{i18n>ts}" class="sapUiSmallMarginEnd"/>
-                                            <Text text="{i18n>te}"/>
+                                            <Text text="{i18n>preAssembly}" class="sapUiTinyMarginBottom"/>
+                                            <HBox class="sapUiTinyMarginBottom">
+                                                <items>
+                                                    <Text text="{i18n>ts}" class="sapUiSmallMarginEnd"/>
+                                                    <Text text="{i18n>te}"/>
+                                                </items>
+                                            </HBox>
+                                            <HBox>
+                                                <items>
+                                                    <Text text="{i18n>is}" class="sapUiSmallMarginEnd"/>
+                                                    <Text text="{i18n>ie}"/>
+                                                </items>
+                                            </HBox>
                                         </items>
-                                    </HBox>
-                                    <HBox>
+                                    </VBox>
+                                    <VBox direction="Column" class="sapUiSmallMarginEnd">
                                         <items>
-                                            <Text text="{i18n>is}" class="sapUiSmallMarginEnd"/>
-                                            <Text text="{i18n>ie}" />
+                                            <Text text="{i18n>bowl}" class="sapUiTinyMarginBottom"/>
+                                            <HBox class="sapUiTinyMarginBottom">
+                                                <items>
+                                                    <Text text="{i18n>ts}" class="sapUiSmallMarginEnd"/>
+                                                    <Text text="{i18n>te}"/>
+                                                </items>
+                                            </HBox>
+                                            <HBox>
+                                                <items>
+                                                    <Text text="{i18n>is}" class="sapUiSmallMarginEnd"/>
+                                                    <Text text="{i18n>ie}"/>
+                                                </items>
+                                            </HBox>
                                         </items>
-                                    </HBox>
+                                    </VBox>
+                                    <VBox direction="Column" class="sapUiSmallMarginEnd">
+                                        <items>
+                                            <Text text="{i18n>finishedAssembly}" class="sapUiTinyMarginBottom"/>
+                                            <HBox class="sapUiTinyMarginBottom">
+                                                <items>
+                                                    <Text text="{i18n>ts}" class="sapUiSmallMarginEnd"/>
+                                                    <Text text="{i18n>te}"/>
+                                                </items>
+                                            </HBox>
+                                            <HBox>
+                                                <items>
+                                                    <Text text="{i18n>is}" class="sapUiSmallMarginEnd"/>
+                                                    <Text text="{i18n>ie}"/>
+                                                </items>
+                                            </HBox>
+                                        </items>
+                                    </VBox>
+                                    <VBox direction="Column" class="sapUiSmallMarginEnd">
+                                        <items>
+                                            <Text text="{i18n>endTestBench}" class="sapUiTinyMarginBottom"/>
+                                            <HBox class="sapUiTinyMarginBottom">
+                                                <items>
+                                                    <Text text="{i18n>ts}" class="sapUiSmallMarginEnd"/>
+                                                    <Text text="{i18n>te}"/>
+                                                </items>
+                                            </HBox>
+                                            <HBox>
+                                                <items>
+                                                    <Text text="{i18n>is}" class="sapUiSmallMarginEnd"/>
+                                                    <Text text="{i18n>ie}"/>
+                                                </items>
+                                            </HBox>
+                                        </items>
+                                    </VBox>
+                                    <VBox direction="Column" class="sapUiSmallMarginEnd">
+                                        <items>
+                                            <Text text="{i18n>finalAssembly}" class="sapUiTinyMarginBottom"/>
+                                            <HBox class="sapUiTinyMarginBottom">
+                                                <items>
+                                                    <Text text="{i18n>ts}" class="sapUiSmallMarginEnd"/>
+                                                    <Text text="{i18n>te}"/>
+                                                </items>
+                                            </HBox>
+                                            <HBox>
+                                                <items>
+                                                    <Text text="{i18n>is}" class="sapUiSmallMarginEnd"/>
+                                                    <Text text="{i18n>ie}"/>
+                                                </items>
+                                            </HBox>
+                                        </items>
+                                    </VBox>
                                 </items>
-                            </VBox>
-                        </header>
-                    </Column>
-                    <Column>
-                        <header>
-                            <VBox direction="Column">
-                                <items>
-                                    <Text text="{i18n>bowl}" class="sapUiTinyMarginBottom"/>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <items>
-                                            <Text text="TS" class="sapUiLargeMarginEnd"/>
-                                            <Text text="TE"/>
-                                        </items>
-                                    </HBox>
-                                    <HBox>
-                                        <items>
-                                            <Text text="IS" class="sapUiLargeMarginEnd"/>
-                                            <Text text="IE" class="sapUiTinyMarginBegin"/>
-                                        </items>
-                                    </HBox>
-                                </items>
-                            </VBox>
-                        </header>
-                    </Column>
-                    <Column>
-                        <header>
-                            <VBox direction="Column">
-                                <items>
-                                    <Text text="{i18n>finishedAssembly}" class="sapUiTinyMarginBottom"/>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <items>
-                                            <Text text="TS" class="sapUiLargeMarginEnd"/>
-                                            <Text text="TE"/>
-                                        </items>
-                                    </HBox>
-                                    <HBox>
-                                        <items>
-                                            <Text text="IS" class="sapUiLargeMarginEnd"/>
-                                            <Text text="IE" class="sapUiTinyMarginBegin"/>
-                                        </items>
-                                    </HBox>
-                                </items>
-                            </VBox>
-                        </header>
-                    </Column>
-
-                    <Column>
-                        <header>
-                            <VBox direction="Column">
-                                <items>
-                                    <Text text="{i18n>endTestBench}" class="sapUiTinyMarginBottom"/>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <items>
-                                            <Text text="TS" class="sapUiLargeMarginEnd"/>
-                                            <Text text="TE"/>
-                                        </items>
-                                    </HBox>
-                                    <HBox>
-                                        <items>
-                                            <Text text="IS" class="sapUiLargeMarginEnd"/>
-                                            <Text text="IE" class="sapUiTinyMarginBegin"/>
-                                        </items>
-                                    </HBox>
-                                </items>
-                            </VBox>
-                        </header>
-                    </Column>
-                    <Column>
-                        <header>
-                            <VBox direction="Column">
-                                <items>
-                                    <Text text="{i18n>finalAssembly}" class="sapUiTinyMarginBottom"/>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <items>
-                                            <Text text="TS" class="sapUiLargeMarginEnd"/>
-                                            <Text text="TE"/>
-                                        </items>
-                                    </HBox>
-                                    <HBox>
-                                        <items>
-                                            <Text text="IS" class="sapUiLargeMarginEnd"/>
-                                            <Text text="IE" class="sapUiTinyMarginBegin"/>
-                                        </items>
-                                    </HBox>
-                                </items>
-                            </VBox>
+                            </HBox>
                         </header>
                     </Column>
                 </columns>
@@ -201,7 +193,6 @@
                                                     <Text text="{itemcategory}"/>
                                                 </items>
                                             </VBox>
-
                                         </items>
                                     </HBox>
                                     <ObjectIdentifier title="{materialdescription}"/>
@@ -251,197 +242,210 @@
                             </CustomListItem>
                             <CustomListItem type="Inactive">
                                 <content>
-                                    <HBox class="sapUiNoMarginTop">
+                                    <HBox>
                                         <items>
-                                            <VBox class="sapUiSmallMarginEnd">
+                                            <VBox>
                                                 <items>
                                                     <Text text="{plantOrder}"/>
-                                                    <Text text=""/>
-                                                    <Text text="{commercialFlag}"/>
-                                                    <Text text="{planFlag}"/>
                                                 </items>
                                             </VBox>
                                             <VBox>
                                                 <items>
-                                                    <!-- <ObjectStatus class="sapMObjectStatusMediam" text="" state="Success" icon="sap-icon://sys-enter-2"/> -->
                                                     <OverflowToolbar design="Transparent" style="Clear">
                                                         <content>
-                                                            <!-- <ObjectStatus class="sapMObjectStatusMediam" state="Success" icon="sap-icon://sys-enter-2"/> -->
-                                                            <!-- <ObjectStatus class="sapMObjectStatusMediam" state="Warning" icon="sap-icon://warning2"/> -->
-                                                            <!-- <ObjectStatus class="sapMObjectStatusMediam" state="Error" icon="sap-icon://error"/> -->
                                                             <core:Icon src="sap-icon://circle-task-2" color="#008000"/>
                                                             <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
                                                             <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
                                                         </content>
                                                     </OverflowToolbar>
-                                                    <Text text=""/>
+                                                </items>
+                                            </VBox>
+                                        </items>
+                                    </HBox>
+                                    <ObjectIdentifier title=""/>
+                                    <HBox class="sapUiMediumMarginBottom">
+                                        <items>
+                                            <VBox class="sapUiLargeMarginEnd">
+                                                <items>
+                                                    <Text text="{commercialFlag}"/>
+                                                    <Text text="{planFlag}"/>
+                                                    <Text text="{planFlag}"/>
+                                                </items>
+                                            </VBox>
+                                            <VBox>
+                                                <items>
                                                     <Text text="{mrpController}"/>
                                                 </items>
                                             </VBox>
                                         </items>
                                     </HBox>
-                                    <!-- <OverflowToolbar design="Transparent" style="Clear" class="sapUiTinyMarginTop">
-                                <content>
-                                    <ToolbarSpacer />
-                                    <Button text="Remark" activeIcon="sap-icon://notes" type="Ghost" icon="sap-icon://notes" press=".onOpenRemark"/>
-                                    <ToolbarSpacer />
-                                </content>
-                            </OverflowToolbar> -->
-                                    <VBox alignItems="Start">
-                                        <Label text="{i18n>remark}" wrapping="false" class="noteLabel"/>
-                                        <TextArea value="{note}" rows="2"/>
-                                        <Button text="save" press="onRemarkPress"></Button>
-                                    </VBox>
-                                </content>
-                            </CustomListItem>
-                            <CustomListItem>
-                                <content>
-                                    <VBox direction="Column">
-                                        <items>
-                                            <HBox class="sapUiMediumMarginBottom">
+                                    <OverflowToolbar style="Clear" class="sapUiNoMargin">
+                                        <content>
+                                            <ToolbarSpacer/>
+                                            <HBox class="sapUiNoMargin">
                                                 <items>
-                                                    <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
-                                                    <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                    <Label text="-"/>
+                                                    <Text text="-"/>
                                                 </items>
                                             </HBox>
-                                            <HBox>
-                                                <items>
-                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
-                                                    <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                                </items>
-                                            </HBox>
-                                            <OverflowToolbar design="Transparent" style="Clear">
-                                                <content>
-                                                    <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
-                                                    <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
-                                                    <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#008000"/>
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#E04E21"/>
-                                                </content>
-                                            </OverflowToolbar>
-                                        </items>
-                                    </VBox>
+                                            <ToolbarSpacer/>
+                                        </content>
+                                    </OverflowToolbar>
                                 </content>
                             </CustomListItem>
                             <CustomListItem>
                                 <content>
-                                    <VBox direction="Column">
+                                    <HBox>
                                         <items>
-                                            <HBox class="sapUiMediumMarginBottom">
+                                            <VBox direction="Column" class="sapUiMediumMarginEnd">
                                                 <items>
-                                                    <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
-                                                    <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                    <HBox class="sapUiMediumMarginBottom">
+                                                        <items>
+                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
+                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
+                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
+                                                            <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
+                                                            <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#008000"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#E04E21"/>
+                                                        </content>
+                                                    </OverflowToolbar>
                                                 </items>
-                                            </HBox>
-                                            <HBox>
+                                            </VBox>
+                                            <!--  -->
+                                            <VBox direction="Column" class="sapUiMediumMarginEnd">
                                                 <items>
-                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
-                                                    <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                    <HBox class="sapUiMediumMarginBottom">
+                                                        <items>
+                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
+                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
+                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
+                                                            <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
+                                                            <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                        </content>
+                                                    </OverflowToolbar>
                                                 </items>
-                                            </HBox>
-                                            <OverflowToolbar design="Transparent" style="Clear">
-                                                <content>
-                                                    <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
-                                                    <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
-                                                    <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
-                                                </content>
-                                            </OverflowToolbar>
+                                            </VBox>
+                                            <!--  -->
+                                            <VBox direction="Column" class="sapUiLargeMarginEnd">
+                                                <items>
+                                                    <HBox class="sapUiMediumMarginBottom">
+                                                        <items>
+                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
+                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
+                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
+                                                            <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
+                                                            <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                        </content>
+                                                    </OverflowToolbar>
+                                                </items>
+                                            </VBox>
+                                            <!--  -->
+                                            <VBox direction="Column" class="sapUiMediumMarginEnd">
+                                                <items>
+                                                    <HBox class="sapUiMediumMarginBottom">
+                                                        <items>
+                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
+                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
+                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
+                                                            <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
+                                                            <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                        </content>
+                                                    </OverflowToolbar>
+                                                </items>
+                                            </VBox>
+                                            <!--  -->
+                                            <VBox direction="Column">
+                                                <items>
+                                                    <HBox class="sapUiMediumMarginBottom">
+                                                        <items>
+                                                            <ObjectIdentifier title="{= ${paTSDueDate} ? ${paTSDueDate} : '-' }" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
+                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox>
+                                                        <items>
+                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
+                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
+                                                            <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
+                                                            <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                        </content>
+                                                    </OverflowToolbar>
+                                                </items>
+                                            </VBox>
+                                            <!--  -->
                                         </items>
-                                    </VBox>
-                                </content>
-                            </CustomListItem>
-                            <CustomListItem>
-                                <content>
-                                    <VBox direction="Column">
+                                    </HBox>
+                                    <!-- <FlexBox width="100%" id="box0" alignItems="Start" fitContainer="true">
                                         <items>
-                                            <HBox class="sapUiMediumMarginBottom">
-                                                <items>
-                                                    <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
-                                                    <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
-                                                </items>
-                                            </HBox>
-                                            <HBox>
-                                                <items>
-                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
-                                                    <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                                </items>
-                                            </HBox>
-                                            <OverflowToolbar design="Transparent" style="Clear">
-                                                <content>
-                                                    <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
-                                                    <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
-                                                    <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#008000"/>
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
-                                                </content>
-                                            </OverflowToolbar>
+                                            <Label text="Remark:" class="sapUiTinyMarginEnd"/>
+                                            <TextArea value="{remark}" rows="1" maxLength="40" width="100%" class="sapUiSmallMarginEnd"/>
+                                            <Button text="Save" press="onSaveRemark"/>
                                         </items>
-                                    </VBox>
-                                </content>
-                            </CustomListItem>
-                            <CustomListItem>
-                                <content>
-                                    <VBox direction="Column">
-                                        <items>
-                                            <HBox class="sapUiMediumMarginBottom">
-                                                <items>
-                                                    <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
-                                                    <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
-                                                </items>
-                                            </HBox>
-                                            <HBox>
-                                                <items>
-                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
-                                                    <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                                </items>
-                                            </HBox>
-                                            <OverflowToolbar design="Transparent" style="Clear">
-                                                <content>
-                                                    <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
-                                                    <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
-                                                    <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#E04E21"/>
-                                                </content>
-                                            </OverflowToolbar>
-                                        </items>
-                                    </VBox>
-                                </content>
-                            </CustomListItem>
-                            <CustomListItem>
-                                <content>
-                                    <VBox direction="Column">
-                                        <items>
-                                            <HBox class="sapUiMediumMarginBottom">
-                                                <items>
-                                                    <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiMediumMarginEnd"/>
-                                                    <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
-                                                </items>
-                                            </HBox>
-                                            <HBox>
-                                                <items>
-                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiMediumMarginEnd"/>
-                                                    <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                                </items>
-                                            </HBox>
-                                            <OverflowToolbar design="Transparent" style="Clear">
-                                                <content>
-                                                    <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
-                                                    <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
-                                                    <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#008000"/>
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
-                                                    <core:Icon src="sap-icon://circle-task-2" color="#E04E21"/>
-                                                </content>
-                                            </OverflowToolbar>
-                                        </items>
-                                    </VBox>
+                                    </FlexBox> -->
+                                    <OverflowToolbar class="sapUiSmallMarginTop" style="Clear" height="4em">
+                                        <Label text="Remark:"/>
+                                        <TextArea value="{remark}" rows="1" width="70%" class="sapUiTinyMarginEnd" growing="true" showExceededText="true"/>
+                                        <Button text="Save" press="onSaveRemark" type="Emphasized"/>
+                                    </OverflowToolbar>
                                 </content>
                             </CustomListItem>
                         </cells>

@@ -261,7 +261,23 @@ sap.ui.define([
 
                 oBindingParams.filters.push(oFilter);
             }
+        },
+
+
+        onExit: function () {
+            var oHistory = sap.ui.core.routing.History.getInstance();
+            var sPreviousHash = oHistory.getPreviousHash();
+
+            if (sPreviousHash) {
+                window.history.go(-1);
+            } else {
+                sap.ushell.Container.getService("CrossApplicationNavigation")
+                    .toExternal({
+                        target: { shellHash: "#Shell-home" }
+                    });
+            }
         }
+
 
     });
 });
