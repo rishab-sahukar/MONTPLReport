@@ -5,9 +5,9 @@
     xmlns:sap.ui.layout="sap.ui.layout" controllerName="sap.ui.test.controller.View1">
     <Page>
         <headerContent>
-            <Bar id="bar0">
+            <Bar>
                 <contentLeft>
-                    <Button xmlns="sap.m" text="Button" id="button0" visible="false"/>
+                    <Button xmlns="sap.m" text="Button" visible="false"/>
                 </contentLeft>
                 <contentMiddle>
                     <Button xmlns="sap.m" text="{i18n>sdOrderBtn}" type="Emphasized"/>
@@ -16,7 +16,7 @@
                     <Button xmlns="sap.m" text="{i18n>gttCockpititemBtn}" type="Emphasized"/>
                 </contentMiddle>
                 <contentRight>
-                    <Button xmlns="sap.m" text="Button" id="button2" visible="false"/>
+                    <Button xmlns="sap.m" text="Button" visible="false"/>
                 </contentRight>
             </Bar>
         </headerContent>
@@ -45,7 +45,7 @@
                                             <Label text="{i18n>vfgConfirmed}"/>
                                         </sap.ui.layout:content>
                                     </sap.ui.layout:VerticalLayout>
-                                    <sap.ui.layout:VerticalLayout width="100%" id="layout0_1776769563112">
+                                    <sap.ui.layout:VerticalLayout width="100%">
                                         <sap.ui.layout:content>
                                             <Label text="{i18n>posType}"/>
                                             <Label text=""/>
@@ -62,7 +62,7 @@
             </u:ObjectPageHeaderContent>
             <Table items="{/rows}" noDataText="Drop column list items here and columns in the area above" id="table0" mode="MultiSelect" growing="true" growingScrollToLoad="true" selectionChange="onSelectionChange" sticky="ColumnHeaders,HeaderToolbar">
                 <columns>
-                    <Column id="column0" width="26em">
+                    <Column width="26em">
                         <header>
                             <Text text=""/>
                         </header>
@@ -81,7 +81,7 @@
                         <header>
                             <HBox>
                                 <items>
-                                    <VBox direction="Column" class="sapUiSmallMarginEnd">
+                                    <VBox width="130px">
                                         <items>
                                             <Text text="{i18n>preAssembly}" class="sapUiTinyMarginBottom"/>
                                             <HBox class="sapUiTinyMarginBottom">
@@ -98,7 +98,7 @@
                                             </HBox>
                                         </items>
                                     </VBox>
-                                    <VBox direction="Column" class="sapUiSmallMarginEnd">
+                                    <VBox width="130px">
                                         <items>
                                             <Text text="{i18n>bowl}" class="sapUiTinyMarginBottom"/>
                                             <HBox class="sapUiTinyMarginBottom">
@@ -115,7 +115,7 @@
                                             </HBox>
                                         </items>
                                     </VBox>
-                                    <VBox direction="Column" class="sapUiSmallMarginEnd">
+                                    <VBox width="130px">
                                         <items>
                                             <Text text="{i18n>finishedAssembly}" class="sapUiTinyMarginBottom"/>
                                             <HBox class="sapUiTinyMarginBottom">
@@ -132,7 +132,7 @@
                                             </HBox>
                                         </items>
                                     </VBox>
-                                    <VBox direction="Column" class="sapUiSmallMarginEnd">
+                                    <VBox width="130px">
                                         <items>
                                             <Text text="{i18n>endTestBench}" class="sapUiTinyMarginBottom"/>
                                             <HBox class="sapUiTinyMarginBottom">
@@ -149,7 +149,7 @@
                                             </HBox>
                                         </items>
                                     </VBox>
-                                    <VBox direction="Column" class="sapUiSmallMarginEnd">
+                                    <VBox width="130px">
                                         <items>
                                             <Text text="{i18n>finalAssembly}" class="sapUiTinyMarginBottom"/>
                                             <HBox class="sapUiTinyMarginBottom">
@@ -178,17 +178,17 @@
                                 <content>
                                     <HBox>
                                         <items>
-                                            <VBox class="sapUiLargeMarginEnd">
+                                            <VBox width="150px">
                                                 <items>
                                                     <ObjectIdentifier title="{salesOrderNumber}"/>
                                                 </items>
                                             </VBox>
-                                            <VBox class="sapUiLargeMarginEnd">
+                                            <VBox width="120px">
                                                 <items>
                                                     <Text text="{itemNo}"/>
                                                 </items>
                                             </VBox>
-                                            <VBox class="sapUiMediumMarginBeginEnd">
+                                            <VBox width="120px">
                                                 <items>
                                                     <Text text="{itemcategory}"/>
                                                 </items>
@@ -196,29 +196,23 @@
                                         </items>
                                     </HBox>
                                     <ObjectIdentifier title="{materialdescription}"/>
-                                    <HBox class="sapUiMediumMarginBottom">
+                                    <HBox height="100px">
                                         <items>
-                                            <VBox class="sapUiSmallMarginEnd">
+                                            <VBox width="150px">
                                                 <items>
-                                                    <!-- <ObjectIdentifier title="{salesOrderNumber}"/> -->
-                                                    <!-- <ObjectIdentifier title="{materialdescription}"/> -->
                                                     <Text text="{plant}"/>
                                                     <Text text="{dueDate}"/>
                                                     <Text text="{modelDesign}"/>
                                                 </items>
                                             </VBox>
-                                            <VBox class="sapUiSmallMarginEnd">
+                                            <VBox width="120px">
                                                 <items>
-                                                    <!-- <Text text="{itemNo}"/> -->
-                                                    <!-- <Text text=""/> -->
                                                     <Text text="{materialNo}"/>
                                                     <Text text="{confirmedDate}"/>
                                                 </items>
                                             </VBox>
-                                            <VBox>
+                                            <VBox width="120px">
                                                 <items>
-                                                    <!-- <Text text="{itemcategory}"/> -->
-                                                    <!-- <Text text=""/> -->
                                                     <Text text=""/>
                                                     <Text text="2016-08-24"/>
                                                     <Text text="{salesGroup}"/>
@@ -226,16 +220,16 @@
                                             </VBox>
                                         </items>
                                     </HBox>
-                                    <OverflowToolbar style="Clear" id="toolbar7" class="sapUiNoMargin">
+                                    <OverflowToolbar style="Clear">
                                         <content>
-                                            <ToolbarSpacer id="spacer0"/>
-                                            <HBox id="hbox22" class="sapUiNoMargin">
+                                            <ToolbarSpacer/>
+                                            <HBox>
                                                 <items>
                                                     <Label text="{i18n>measuringDate}"/>
                                                     <Text text="{salesGroup}"/>
                                                 </items>
                                             </HBox>
-                                            <ToolbarSpacer id="spacer1"/>
+                                            <ToolbarSpacer/>
                                         </content>
                                     </OverflowToolbar>
                                 </content>
@@ -244,7 +238,7 @@
                                 <content>
                                     <HBox>
                                         <items>
-                                            <VBox>
+                                            <VBox width="100px">
                                                 <items>
                                                     <Text text="{plantOrder}"/>
                                                 </items>
@@ -263,9 +257,9 @@
                                         </items>
                                     </HBox>
                                     <ObjectIdentifier title=""/>
-                                    <HBox class="sapUiMediumMarginBottom">
+                                    <HBox height="100px">
                                         <items>
-                                            <VBox class="sapUiLargeMarginEnd">
+                                            <VBox width="100px">
                                                 <items>
                                                     <Text text="{commercialFlag}"/>
                                                     <Text text="{planFlag}"/>
@@ -279,17 +273,7 @@
                                             </VBox>
                                         </items>
                                     </HBox>
-                                    <OverflowToolbar style="Clear" class="sapUiNoMargin">
-                                        <content>
-                                            <ToolbarSpacer/>
-                                            <HBox class="sapUiNoMargin">
-                                                <items>
-                                                    <Label text="-"/>
-                                                    <Text text="-"/>
-                                                </items>
-                                            </HBox>
-                                            <ToolbarSpacer/>
-                                        </content>
+                                    <OverflowToolbar style="Clear">
                                     </OverflowToolbar>
                                 </content>
                             </CustomListItem>
@@ -297,18 +281,34 @@
                                 <content>
                                     <HBox>
                                         <items>
-                                            <VBox direction="Column" class="sapUiMediumMarginEnd">
+                                            <VBox direction="Column" width="130px">
                                                 <items>
-                                                    <HBox class="sapUiMediumMarginBottom">
+                                                    <HBox height="60px">
                                                         <items>
-                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
-                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paTSDueDat}" text="{paTSDueTim}"/>
+                                                                </items>
+                                                            </VBox>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paTEConfirmedDat}" text="{paTEConfirmedTim}"/>
+                                                                </items>
+                                                            </VBox>
                                                         </items>
                                                     </HBox>
-                                                    <HBox>
+                                                    <HBox height="50px">
                                                         <items>
-                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
-                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}"/>
+                                                                </items>
+                                                            </VBox>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                                </items>
+                                                            </VBox>
                                                         </items>
                                                     </HBox>
                                                     <OverflowToolbar design="Transparent" style="Clear">
@@ -324,18 +324,74 @@
                                                 </items>
                                             </VBox>
                                             <!--  -->
-                                            <VBox direction="Column" class="sapUiMediumMarginEnd">
+                                            <VBox width="130px">
                                                 <items>
-                                                    <HBox class="sapUiMediumMarginBottom">
+                                                    <HBox height="60px">
                                                         <items>
-                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
-                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paTSDueDat}" text="{paTSDueTim}"/>
+                                                                </items>
+                                                            </VBox>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                                </items>
+                                                            </VBox>
                                                         </items>
                                                     </HBox>
-                                                    <HBox>
+                                                    <HBox height="50px">
                                                         <items>
-                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
-                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}"/>
+                                                                </items>
+                                                            </VBox>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                                </items>
+                                                            </VBox>
+                                                        </items>
+                                                    </HBox>
+                                                    <OverflowToolbar design="Transparent" style="Clear">
+                                                        <content>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
+                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
+                                                        </content>
+                                                    </OverflowToolbar>
+                                                </items>
+                                            </VBox>
+                                            <!--  -->
+                                            <VBox width="130px">
+                                                <items>
+                                                    <HBox height="60px">
+                                                        <items>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}"/>
+                                                                </items>
+                                                            </VBox>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paTEConfirmedDat}" text="{paTEConfirmedTim}"/>
+                                                                </items>
+                                                            </VBox>
+                                                        </items>
+                                                    </HBox>
+                                                    <HBox height="50px">
+                                                        <items>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}"/>
+                                                                </items>
+                                                            </VBox>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                                </items>
+                                                            </VBox>
                                                         </items>
                                                     </HBox>
                                                     <OverflowToolbar design="Transparent" style="Clear">
@@ -351,18 +407,34 @@
                                                 </items>
                                             </VBox>
                                             <!--  -->
-                                            <VBox direction="Column" class="sapUiLargeMarginEnd">
+                                            <VBox width="130px">
                                                 <items>
-                                                    <HBox class="sapUiMediumMarginBottom">
+                                                    <HBox height="60px">
                                                         <items>
-                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
-                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}"/>
+                                                                </items>
+                                                            </VBox>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                                </items>
+                                                            </VBox>
                                                         </items>
                                                     </HBox>
-                                                    <HBox>
+                                                    <HBox height="50px">
                                                         <items>
-                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
-                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}"/>
+                                                                </items>
+                                                            </VBox>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                                </items>
+                                                            </VBox>
                                                         </items>
                                                     </HBox>
                                                     <OverflowToolbar design="Transparent" style="Clear">
@@ -378,45 +450,34 @@
                                                 </items>
                                             </VBox>
                                             <!--  -->
-                                            <VBox direction="Column" class="sapUiMediumMarginEnd">
+                                            <VBox width="130px">
                                                 <items>
-                                                    <HBox class="sapUiMediumMarginBottom">
+                                                    <HBox height="60px">
                                                         <items>
-                                                            <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
-                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paTSDueDate}" text="{paTSDueTime}"/>
+                                                                </items>
+                                                            </VBox>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
+                                                                </items>
+                                                            </VBox>
                                                         </items>
                                                     </HBox>
-                                                    <HBox>
+                                                    <HBox height="50px">
                                                         <items>
-                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
-                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
-                                                        </items>
-                                                    </HBox>
-                                                    <OverflowToolbar design="Transparent" style="Clear">
-                                                        <content>
-                                                            <!-- <ObjectStatus state="Success" icon="sap-icon://sys-enter-2"/> -->
-                                                            <!-- <ObjectStatus state="Warning" icon="sap-icon://warning2"/> -->
-                                                            <!-- <ObjectStatus state="Error" icon="sap-icon://error"/> -->
-                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
-                                                            <core:Icon src="sap-icon://circle-task-2" color="#FFFF00"/>
-                                                            <core:Icon src="sap-icon://circle-task-2" color="#808080"/>
-                                                        </content>
-                                                    </OverflowToolbar>
-                                                </items>
-                                            </VBox>
-                                            <!--  -->
-                                            <VBox direction="Column">
-                                                <items>
-                                                    <HBox class="sapUiMediumMarginBottom">
-                                                        <items>
-                                                            <ObjectIdentifier title="{= ${paTSDueDate} ? ${paTSDueDate} : '-' }" text="{paTSDueTime}" class="sapUiSmallMarginEnd"/>
-                                                            <ObjectIdentifier title="{paTEConfirmedDate}" text="{paTEConfirmedTime}"/>
-                                                        </items>
-                                                    </HBox>
-                                                    <HBox>
-                                                        <items>
-                                                            <ObjectIdentifier title="{paISStartDate}" text="{paISStartTime}" class="sapUiSmallMarginEnd"/>
-                                                            <ObjectIdentifier title="{psIEActualdate}" text="{psIEActualTime}"/>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{paISStartDat}" text="{paISStartTim}"/>
+                                                                </items>
+                                                            </VBox>
+                                                            <VBox width="50px">
+                                                                <items>
+                                                                    <ObjectIdentifier title="{psIEActualdat}" text="{psIEActualTim}"/>
+                                                                </items>
+                                                            </VBox>
                                                         </items>
                                                     </HBox>
                                                     <OverflowToolbar design="Transparent" style="Clear">
@@ -434,16 +495,9 @@
                                             <!--  -->
                                         </items>
                                     </HBox>
-                                    <!-- <FlexBox width="100%" id="box0" alignItems="Start" fitContainer="true">
-                                        <items>
-                                            <Label text="Remark:" class="sapUiTinyMarginEnd"/>
-                                            <TextArea value="{remark}" rows="1" maxLength="40" width="100%" class="sapUiSmallMarginEnd"/>
-                                            <Button text="Save" press="onSaveRemark"/>
-                                        </items>
-                                    </FlexBox> -->
-                                    <OverflowToolbar class="sapUiSmallMarginTop" style="Clear" height="4em">
+                                    <OverflowToolbar style="Clear" height="4em">
                                         <Label text="Remark:"/>
-                                        <TextArea value="{remark}" rows="1" width="70%" class="sapUiTinyMarginEnd" growing="true" showExceededText="true"/>
+                                        <TextArea value="{remark}" rows="1" width="70%" growing="true" showExceededText="true"/>
                                         <Button text="Save" press="onSaveRemark" type="Emphasized"/>
                                     </OverflowToolbar>
                                 </content>
